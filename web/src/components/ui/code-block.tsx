@@ -29,7 +29,7 @@ export function CodeBlock({
     <div className={twMerge('relative rounded-lg border border-zinc-700 overflow-x-auto', className)} {...props}>
       <div 
         dangerouslySetInnerHTML={{ __html: parsedCode }}
-        className="[&_pre]:p-4"
+        className="[&_pre]:p-4 [&_pre]:text-sm [&_pre]:font-mono [&_pre]:leading-relaxed"
       />
     </div>
   )
